@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Card, CardType } from './card/card-utils' 
 
 @Component({
   selector: 'my-app',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  kaos = new Card('https://i.imgur.com/NJOrcHX.jpg', CardType.GOD);
+  constructor() {
+
+  }
 }
