@@ -1,3 +1,4 @@
 <div [title]="card.description">
-	<img [src]="card.imageFront"/> 
+	<img [height]="forceHeight" [width]="forceWidth" [src]="card.imageFront" (click)="tapThat()"/>
+  <button (click)="tapThat()">TAP THAT</button>
 </div>
